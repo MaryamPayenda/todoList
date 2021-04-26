@@ -12,16 +12,24 @@
     <title>Todo List</title>
   </head>
   <body>
-    <h1 class="styling">To DO <span>List</span></h1>
+    <h1 class="styling">To DO List</h1>
+
     <div class="input-div">
-      <input type="text" class="input" placeholder="Things to Do . . ." />
-      <button class="addButton"><i class="fas fa-plus"></i></button>
+      <input
+        type="text"
+        placeholder="Things to Do . . ."
+        id="userData"
+        name="userData"
+      />
+      <button class="addButton" onclick="addToList()">
+        <i class="fas fa-plus"></i>
+      </button>
     </div>
     <div class="container">
       <div class="item">
-        <input type="text" class="item-input" disabled />
-        <button class="editButton"><i class="fas fa-pen"></i></button>
-        <button class="removeButton"><i class="fas fa-trash-alt"></i></button>
+        <!-- <p class="item-input" /> -->
+        <!-- <button class="editButton"><i class="fas fa-pen"></i></button>
+        <button class="removeButton"><i class="fas fa-trash-alt"></i></button> -->
       </div>
     </div>
 
