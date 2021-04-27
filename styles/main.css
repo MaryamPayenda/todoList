@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -5,8 +6,92 @@
 }
 
 body {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   height: 100%;
   background-color: #111;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 1rem 0 3rem;
+  text-align: center;
+  color: #fff;
+}
+
+.styling {
+  color: #680468;
+  font-family: "Neucha", cursive;
+}
+
+.input-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.input-div .input {
+  padding: 0.5rem 1rem;
+  height: 50px;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  width: 450px;
+  font-size: 1.15rem;
+  margin: 0.25rem;
+  border-radius: 25px;
+}
+
+.addButton {
+  height: 50px;
+  width: 50px;
+  border-radius: 45px;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  color: #680468;
+  margin: 0.25px;
+  cursor: pointer;
+}
+.addButton:hover {
+  opacity: 0.8;
+}
+
+p {
+  margin-top: 0.45rem;
+  padding: 2rem;
+  color: #fff;
+  width: 500px;
+  border-bottom: 1px solid #680468;
+  height: 3rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  position: relative;
+}
+
+p div {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+p div button {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.5em;
+  border: none;
+}
+
+.delete {
+  color: red;
+}
+
+.completed {
+  text-decoration: line-through;
 }
 
 /*# sourceMappingURL=main.css.map */
