@@ -31,23 +31,7 @@ const addToList = (e) => {
     document.querySelector("#userData").placeholder = "Please Enter text first";
   }
 };
-// Random colour generator in hexa number
-const colorGen = () => {
-  let result = "#";
-  let colorCode = "0123456789ABCDEF";
-  for (let i = 0; i < 6; i++) {
-    result += colorCode[Math.floor(Math.random() * 16)];
-  }
-  return result;
-};
-// Functional check which key the user is pressing
 const keyCheck = (event) => {
-  console.log(event);
   if (e.key == "Enter") addToList();
 };
-// Adding event listener to the input
-// const userInput = document.querySelector("#userData");
-// userInput.addEventListener("keypress", keyCheck);
-
-// Adding event listener to the form
 document.querySelector("form").addEventListener("submit", addToList);
