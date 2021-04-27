@@ -12,8 +12,8 @@ const addToList = (e) => {
     const doneButton = document.createElement("button");
     const deleteButton = document.createElement("button");
 
-    doneButton.innerHTML = " ✓";
-    deleteButton.innerHTML = "✗";
+    doneButton.innerHTML = "✅";
+    deleteButton.innerHTML = "❌";
 
     newContainer.appendChild(doneButton);
     newContainer.appendChild(deleteButton);

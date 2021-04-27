@@ -5,6 +5,8 @@
 }
 
 body {
+  width: 100vw;
+  @include flexbox;
   height: 100%;
   background-color: $black-color;
 }

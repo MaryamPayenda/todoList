@@ -12,6 +12,7 @@ h1 {
 }
 .input-div {
   @include flexbox;
+  flex-direction: column;
   // text-align: center;
 
   .input {
@@ -41,39 +42,41 @@ h1 {
     opacity: 0.8;
   }
 }
-.container {
-  @include flexbox;
+// .container {
+//   @include flexbox;
+//   flex-direction: column;
+//   margin-top: 2rem;
+
+//   .item {
+//     padding: 2rem;
+//     border-radius: 25px;
+//     color: $white-color;
+//     width: 350px;
+//     background-color: rgb(36, 33, 33);
+//   }
+// }
+p {
+  display: flex;
+  justify-content: space-evenly;
   flex-direction: column;
-  margin-top: 2rem;
-
-  .item {
-    padding: 2rem;
-    border-radius: 25px;
-    color: $white-color;
-    width: 350px;
-    background-color: rgb(36, 33, 33);
-
-    font-size: 2rem;
-    // border-bottom: 4px solid $white-color;
-    // .item-input {
-    //   background: none;
-    //   outline: none;
-    //   color: $white-color;
-    //   border: none;
-    //   width: 450px;
-    //   font-size: 1.4rem;
-    // }
-    // .editButton {
-    //   @include btnStyle;
-    //   color: $green-color;
-    // }
-    // .removeButton {
-    //   @include btnStyle;
-    //   color: $red-color;
-    // }
+  margin-top: 0.45rem;
+  padding: 2rem;
+  color: $white-color;
+  width: 500px;
+  // background-color: rgb(36, 33, 33);
+  border-bottom: 1px solid $purple-shade;
+  height: 3rem;
+  button {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 0.5em;
+    border: none;
+    // border-radius: 5px;
   }
-}
-.completed {
-  text-decoration: line-through;
-  opacity: 0.5;
+  &.delete {
+    color: red;
+  }
+  &.completed {
+    text-decoration: line-through;
+  }
 }
