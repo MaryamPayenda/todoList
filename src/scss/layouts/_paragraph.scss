@@ -1,0 +1,21 @@
+p {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  // padding: 1rem;
+  color: $white-color;
+  width: 24vw;
+  height: 2rem;
+  max-width: 24vw;
+  border-bottom: 2px solid $purple-shade;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+p div button {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: none;
+}
+.completed {
+  text-decoration: line-through;
+}
