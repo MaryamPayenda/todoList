@@ -2,7 +2,6 @@ p {
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
-  // padding: 1rem;
   color: $white-color;
   width: 24vw;
   height: 2rem;
@@ -10,6 +9,7 @@ p {
   border-bottom: 2px solid $purple-shade;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  font-size: 1.5rem;
 }
 p div button {
   width: 1.5rem;
