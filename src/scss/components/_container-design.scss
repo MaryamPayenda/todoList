@@ -44,18 +44,19 @@ h1 {
 }
 
 p {
-  margin-top: 0.45rem;
-  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  // padding: 1rem;
   color: $white-color;
-  width: 500px;
+  width: 24vw;
+  height: 2rem;
+  max-width: 24vw;
   border-bottom: 1px solid $purple-shade;
-  height: 3rem;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  position: relative;
 }
 p div {
-  position: absolute;
   right: 0;
   top: 0;
 }

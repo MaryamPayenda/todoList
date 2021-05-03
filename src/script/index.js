@@ -3,6 +3,7 @@ const addToList = (e) => {
   let userData = document.querySelector("#userData").value;
   if (userData != "") {
     let newItem = document.createElement("p");
+
     let text = document.createTextNode(userData);
     newItem.appendChild(text);
     document.querySelector(".result").appendChild(newItem);
